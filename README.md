@@ -1,4 +1,5 @@
-# Fast Food Franchisee Lead Extraction
+# FDD-OCR
+Fast Food Franchisee Lead Extraction
 
 This project extracts franchisee information from publicly available Fast Food Franchise Disclosure Documents (FDDs) in PDF format using Optical Character Recognition (OCR) and Regular Expressions (regex).
 
