@@ -1,3 +1,8 @@
+---
+layout: default
+title: FDD-OCR
+---
+
 # FDD-OCR
 Fast Food Franchisee Lead Extraction
 
