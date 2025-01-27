@@ -1,5 +1,5 @@
 ---
-layout: base
+layout: default
 title: FDD-OCR
 ---
 
