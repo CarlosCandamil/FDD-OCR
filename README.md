@@ -24,6 +24,7 @@ This project extracts franchisee information from publicly available Fast Food F
 * The project uses regex patterns to extract the franchisee information from the text extracted by OCR. These patterns may need to be modified or updated to accommodate changes in the format of the FDDs.
 
 ## 2. Installing Required Dependencies
+
 ```python
 pip install opencv-python
 pip install pytesseract
