@@ -22,3 +22,23 @@ This project extracts franchisee information from publicly available Fast Food F
 * This project uses the following dependencies: `pdf2image`, `pytesseract`, and `Pillow`.
 * The project assumes that the PDF files are in the `PDF` directory and that the output files will be written to the same directory.
 * The project uses regex patterns to extract the franchisee information from the text extracted by OCR. These patterns may need to be modified or updated to accommodate changes in the format of the FDDs.
+
+
+```python
+# Import the required library
+from pdf2image import convert_from_path
+     
+
+# Define a function to convert PDFs to JPEGs
+def convert_pdf_to_jpeg(pdf_file, output_dir):
+    pages = convert_from_path(pdf_file, 500)
+    for count, page in enumerate(pages):
+        page.save(f'{output_dir}/out{count}.jpg', 'JPEG')
+     
+
+# Convert PDFs to JPEGs
+convert_pdf_to_jpeg('PDF/burgerking.pdf', 'PDF/bking')
+convert_pdf_to_jpeg('PDF/Popeyes/Popeyes.pdf', 'PDF/Popeyes')
+convert_pdf_to_jpeg('FDD/Wendy.pdf', 'PDF/Wendy')
+convert_pdf_to_jpeg('FDD/Denny.pdf', 'PDF/Denny')
+```
